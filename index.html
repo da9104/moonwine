@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/93d605acff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="stripes">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <span>Antano</span>
+            </div>
+            <ul id="navbar">
+                <li><a href="">Menu</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Promotion</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="search">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+            <div class="img">
+                <img src="./src/assets/images/wine-1010656_1280.png" alt="hero image">
+            </div>
+
+            <div class="title">
+                <p style="">Game Chanager</p>
+                <!-- <p style="letter-spacing: -1px; font-size: 1rem; font-weight: 500;">Rioja Antano</p> -->
+                <span> Moon Wine.</span>
+            </div>
+
+            <div class="btn">
+                <a href="">Learn More</a>
+            </div>
+
+            <div class="year">2023*</div>
+
+            <div class="media">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                </ul>
+            </div>
+    </div>
+
+    <script>
+        TweenMax.from(".logo", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom("nav ul li", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        
+        TweenMax.from(".search", 1, {
+            opacity: 0,
+            delay: .5,
+            x: -20,
+            ease: Expo.easeInOut
+        }, 0.08)
+
+        TweenMax.from(".menu", 1, {
+            opacity: 0,
+            delay: .6,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".title", 1, {
+            opacity: 0,
+            delay: .8,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".btn", 1, {
+            opacity: 0,
+            delay: 1,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-one", 1, {
+            opacity: 0,
+            delay: 2,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-two", 1, {
+            opacity: 0,
+            delay: 2.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img", 1, {
+            opacity: 0,
+            delay: 2.9,
+            y: -800,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from(".year", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: -20,
+            ease: Expo.easeInOut
+        }, 0.08)
+
+        // TweenMax.staggerFrom(".media ul li", 2, {
+        //     opacity: 0,
+        //     delay: 3.2,
+        //     y: 40,
+        //     ease: Expo.easeInOut
+        // }, 0.02)
+
+
+    </script>
+
+</body>
+</html>
